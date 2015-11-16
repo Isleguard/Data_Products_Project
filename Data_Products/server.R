@@ -48,7 +48,7 @@ shinyServer(function(input, output) {
         vmin<-min(vdata$z)
         vwidth<-vmax-vmin
         pl<-sprintf("Variance Data Density: Width=%f",vwidth)
-
+        #######################################################
         v<-ggplot(vdata, aes(x = z), fill=size)
         v<-v+ geom_histogram(binwidth=(nbin*.0001),colour = "black", aes(y = ..density..))
         v<-v+geom_density(fill=NA, colour="red",size=1)

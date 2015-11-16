@@ -23,7 +23,6 @@ shinyUI(fluidPage(
             p("2. The Variance range converges [width decreases] as the data samples per group increases."),
             p("Note that there may be slight variations seen as the data is generated with each slide.")
         ),
-
         # Show a plot of the generated distribution
         mainPanel(
             verticalLayout(
